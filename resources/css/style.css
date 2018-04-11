@@ -1,0 +1,188 @@
+/* Universal Styles */
+
+html {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  margin: 0px;
+}
+
+.container {
+  max-width: 960px;
+  text-align: center;
+  margin: auto;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 1.5rem;
+  margin: auto 1rem auto 2rem;
+}
+
+/* Cover Image Background */
+
+.cover-image {
+  background-image: url("../images/glasses-bg.png");
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+}
+
+/* Header Styles */
+
+.header {
+  position: absolute;
+  top: 1rem;
+  width: 100%;
+}
+
+.header .flex-box {
+  align-items: center;
+}
+
+
+nav {
+  background-color: cadetblue;
+  color: white;
+}
+
+.link.flex-box{
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.link {
+  margin: 1rem 2rem 1rem 0rem;
+}
+
+.link span {
+  margin-left:2rem;
+}
+
+.mobile {
+  display: none;
+}
+
+/* Slogan Overlay Styles */
+
+.overlay {
+  margin-top: 10rem;
+}
+
+.overlay .flex-box {
+  justify-content: flex-end;
+}
+
+.slogan {
+  background-color: white;
+  padding: 1.5rem 5rem;
+  margin-right:-2rem;
+}
+
+.slogan span {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+/* Feature Styles */
+
+.feature {
+  height: 8rem;
+  width: 5rem;
+  margin: 3rem 3rem;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature span {
+  text-align: center;
+}
+
+.feature-icon {
+  width: 5rem;
+  height: auto;
+}
+
+.paper-icon {
+  width: 3.5rem;
+}
+
+.featured {
+  justify-content: center;
+}
+
+/* Info Styles */
+
+.info {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 5rem;
+}
+
+.info h4{
+  max-width: 10rem;
+  background-color: cadetblue;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  padding: 0.5rem 1.5rem;
+}
+
+.info p {
+  text-align: left;
+}
+
+/* Footer Styles */
+
+footer{
+  background-color: azure;
+  padding: 4rem 4rem;
+}
+
+footer.flex-box {
+  justify-content: flex-start;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width:1024px){
+  nav.container{
+    max-width:100%;
+  }
+
+  .header {
+    top: 0rem;
+  }
+
+  .cover-image {
+    height: 22rem;
+  }
+
+  .overlay {
+    margin-top: 5rem;
+  }
+
+  .slogan {
+    padding: 0.75rem 4rem;
+    margin-right: 2rem;
+  }
+
+  .slogan span {
+    font-size:1.33rem;
+  }
+}
+
+@media only screen and (max-width:680px){
+
+}
